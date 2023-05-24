@@ -1,27 +1,22 @@
 # Cricle360
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.7.
+## install the npm packages using npm install or npm i
+### Development server
+Note: before using npm start run the backend first and dont use ng serve
+Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Development server
+![image](https://github.com/Kaditya98829/AngularCrud/assets/26257865/016ed45b-776a-4da2-8236-88c31cac0b95)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+![image](https://github.com/Kaditya98829/AngularCrud/assets/26257865/58ad0986-bf07-4b2b-84e5-40b0d32e6e13)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+![image](https://github.com/Kaditya98829/AngularCrud/assets/26257865/4271564c-fb46-4669-bb0a-ed8620fc788e)
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![image](https://github.com/Kaditya98829/AngularCrud/assets/26257865/cbb9c8fb-3172-4683-9c8b-bad753bd4dd8)
 
-## Running end-to-end tests
+![image](https://github.com/Kaditya98829/AngularCrud/assets/26257865/59bc898f-7883-4f7d-bd97-7d5bd6cbf819)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
