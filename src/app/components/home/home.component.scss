@@ -1,0 +1,10 @@
+.full-background {
+    height: 50vw;
+    background: url('https://res.cloudinary.com/djat12jm7/image/upload/v1684901071/ibrahim-ahmed-pMCInO_Ow0E-unsplash_oicqbh.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container {
+        border: 3px solid #fff;
+        backdrop-filter: blur(2px);
+    }
+}
