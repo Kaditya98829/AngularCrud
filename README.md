@@ -1,7 +1,7 @@
 # Cricle360
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.7.
-## install the npm packages using npm instll or npm i
+## install the npm packages using npm install or npm i
 ### Development server
 Note: before using npm start run the backend first and dont use ng serve
 Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
