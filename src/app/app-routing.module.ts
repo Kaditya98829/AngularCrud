@@ -6,6 +6,7 @@ import { LoginComponent } from './components/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { AuthGuard } from './auth.guard';
 import { ResetpasswordComponent } from './components/resetpassword/resetpassword.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 const routes: Routes = [{
   path: '', component: HomeComponent
@@ -15,6 +16,7 @@ const routes: Routes = [{
 {path:'login', component: LoginComponent},
 {path:'dashboard',canActivate: [AuthGuard],component: DashboardComponent},
 {path:'reset/password/:id', pathMatch:'full', component: ResetpasswordComponent} ,
+{path: '**', pathMatch: 'full', component: PagenotfoundComponent}
 ];
 
 @NgModule({

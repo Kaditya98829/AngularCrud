@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { ResetpasswordComponent } from './components/resetpassword/resetpassword.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ResetpasswordComponent } from './components/resetpassword/resetpassword
     DashboardComponent,
     HeaderComponent,
     HomeComponent,
-    ResetpasswordComponent
+    ResetpasswordComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
