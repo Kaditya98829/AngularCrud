@@ -25,6 +25,5 @@ jobs:
         cache: 'npm'
           
     - name: change cd to build
-      run:  cd ./dist/ && ls
-    - name: view build
-      run: ls
+      run:  cd ./dist/ && sudo cp -r ./cricle360/. /etc/nginx/sites-available/angular
+  
