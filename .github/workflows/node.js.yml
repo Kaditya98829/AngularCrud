@@ -25,4 +25,4 @@ jobs:
         cache: 'npm'
           
     - name: update build
-      run:  ls
+      run:  ls && cd ./dist/
