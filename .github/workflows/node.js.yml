@@ -24,4 +24,5 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
           
-  
+    - name: update build
+      run: cd/dist/ && ls
