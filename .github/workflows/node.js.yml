@@ -25,6 +25,6 @@ jobs:
         cache: 'npm'
           
     - name: change cd to build
-      run:  ls && cd ./dist/
+      run:  cd ./dist/ && ls
     - name: view build
       run: ls
