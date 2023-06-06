@@ -23,5 +23,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-   
+    scripts:
+    -sudo cp -r /dist/cricle360/. /etc/nginx/sites-available/angular
   

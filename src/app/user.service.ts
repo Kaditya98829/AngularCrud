@@ -33,6 +33,6 @@ export class UserService {
  }
 
  resetPassword(token: string, payload: object) {
-  return this.http.put(`https://pahadihumein.net/back/reset/password/${token}`, payload)
+  return this.http.put(`https://pahadihume.in.net/back/reset/password/${token}`, payload)
  }
 }
