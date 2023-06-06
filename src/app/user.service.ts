@@ -7,7 +7,7 @@ import { Subject } from 'rxjs';
 })
 export class UserService {
   constructor(private http: HttpClient) { }
-    
+
   getUsers() {
     return this.http.get('https://pahadihume.in.net/back/users');
   }
@@ -34,5 +34,9 @@ export class UserService {
 
  resetPassword(token: string, payload: object) {
   return this.http.put(`https://pahadihume.in.net/back/reset/password/${token}`, payload)
+ }
+
+ logoutUser() {
+  return this.http.get('https://pahadihume.in.net/back/user/logout');
  }
 }

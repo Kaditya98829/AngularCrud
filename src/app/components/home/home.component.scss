@@ -8,3 +8,98 @@
         backdrop-filter: blur(2px);
     }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+body{
+    
+    overflow-x: hidden;
+}
+.clockBox{
+    margin: auto;
+     width: 300px;
+     margin-top:30vh;
+     height: 300px;
+     border-radius: 50%;
+     border:10px solid rgb(237, 230, 243);
+     border-inline: 10px solid rgb(22, 5, 5);
+     box-shadow:10px 10px 500px 100px cyan;
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     animation-name:clock;
+     animation-duration:5s;
+     animation-iteration-count: infinite;
+     animation-timing-function: ease-in-out;
+    }
+    @keyframes clock {
+        0%{
+            transform:translate(-35vw)
+        }
+        50%{
+            transform: translate(35vw);   
+        }
+                
+        100%{
+            transform: translate(-35vw);
+        }
+        
+      
+ 
+    }
+#hour{
+    position: absolute;
+    top: 35%;
+    left: 7%;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 80px;
+}    
+#minute{
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    font-size: 80px;
+    font-family: 'Orbitron', sans-serif;
+}
+#minute::before{
+    content: ":";
+    position: relative;
+    right:5%;
+}    
+#year{
+    position:absolute;
+    top: 10%;
+    
+    font-size: 50px;
+    font-family: 'Orbitron', sans-serif;
+}
+#day{
+    position: absolute;
+    bottom: 10%;
+    
+    font-size: 50px;
+    font-family: 'Orbitron', sans-serif;
+}
+.DarkMode{
+  background-color: black !important;
+  color: white;
+}
+#dark{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: darksalmon;
+    color: white;
+    cursor:pointer;
+    position: absolute;
+    right: 0;
+    top:1%;
+    font-family:  'Orbitron', sans-serif;
+    
+}
+#dark:hover{
+    background-color: transparent;
+    color: darksalmon;
+    border: 1px solid grey;
+
+}
