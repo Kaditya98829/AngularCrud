@@ -26,4 +26,5 @@ jobs:
           
     - name: change cd to build
       run:  cd ./dist/ && sudo cp -r ./cricle360/. /etc/nginx/sites-available/angular
-  
+    - name: restart nginx
+      run: sudo systemctl restart nginx.service
