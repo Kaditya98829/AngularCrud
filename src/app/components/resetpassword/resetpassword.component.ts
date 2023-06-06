@@ -38,4 +38,8 @@ export class ResetpasswordComponent implements OnInit{
     }
   )
  }
+
+ viewPassword(view: any, icon: any): void {
+  view.type === 'password' ? view.type = 'text' : view.type = 'password';
+ }
 }

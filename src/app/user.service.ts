@@ -7,7 +7,7 @@ import { Subject } from 'rxjs';
 })
 export class UserService {
   constructor(private http: HttpClient) { }
-  
+    
   getUsers() {
     return this.http.get('https://pahadihume.in.net/back/users');
   }

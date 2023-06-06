@@ -6,8 +6,8 @@
 
     </tr>
    <tr *ngFor="let data of userTableData">
-    <td class="text-center">{{data.email}}</td>
     <td class="text-center">{{data.name}}</td>
+    <td class="text-center">{{data.email}}</td>
     <td class="text-center">
         <button class="mx-2"(click)="deleteUser(data._id)">Delete</button>
         <button (click)="isUpdating = !isUpdating; userId = data._id">Update</button></td>
