@@ -18,7 +18,7 @@ ngOnInit(): void {
   this.day = days[time.getDay()];
   this.year = time.getFullYear();
   console.log(minutes)
-  minutes < 10 ? this.minute = ' 0 '+ minutes : this.minute = minutes;
+  minutes < 10 ? this.minute = '0'+ minutes : this.minute = minutes;
 
 }
 
