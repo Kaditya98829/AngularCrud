@@ -14,15 +14,17 @@ export class AppComponent implements OnInit ,DoCheck{
   constructor(private router: Router,
     private userService: UserService,
     private toast: ToastrService,
-    ){}
+    ){
+    }
   ngOnInit(): void {
-    if(localStorage['user'])
+    if(localStorage['user'] && document.cookie.includes('token'))
     {
       this.isUser = true;
     }
+
   }
  ngDoCheck(): void {
-  localStorage['user'] ? this.isUser = true : this.isUser = false;
+  localStorage['user'] && document.cookie.includes('token') ? this.isUser = true : this.isUser = false;
  }
 
  logout() {
