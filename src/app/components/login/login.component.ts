@@ -25,7 +25,10 @@ export class LoginComponent {
     } 
     this.userService.login(this.userData).subscribe(
       (res: any) => 
-                    localStorage.setItem('user', JSON.stringify(res.user)),
+                    {
+                      localStorage.setItem('user', JSON.stringify(res.user));
+                      localStorage.setItem('access_token', JSON.stringify(res.token));
+                    },
           (error: any) => {
           return this.toast.error(error.error.message)
               } , () => {
