@@ -2,6 +2,7 @@ import { AfterContentInit, Component, DoCheck, OnChanges, OnInit, SimpleChanges 
 import { Router } from '@angular/router';
 import { UserService } from './user.service';
 import { ToastrService } from 'ngx-toastr';
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-root',
@@ -14,20 +15,20 @@ export class AppComponent implements OnInit ,DoCheck{
   constructor(private router: Router,
     private userService: UserService,
     private toast: ToastrService,
+    private cookieService: CookieService
     ){
     }
   ngOnInit(): void {
-    const token = document.cookie;
-    if(!!document.cookie.includes('token'))
+    if(this.cookieService.get('token'))
     {
-      console.log(token);
       this.isUser = true;
     }
-    console.log(token);
+    console.log(this.cookieService.get('token'));
+    
 
   }
  ngDoCheck(): void {
-  !!document.cookie.includes('token') ? this.isUser = true : this.isUser = false;
+  !!this.cookieService.get('token') ? this.isUser = true : this.isUser = false;
  }
 
  logout() {
