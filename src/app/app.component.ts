@@ -17,7 +17,7 @@ export class AppComponent implements OnInit ,DoCheck{
     ){
     }
   ngOnInit(): void {
-    const token = document.cookie.includes('token');
+    const token = document.cookie;
     if(!!document.cookie.includes('token'))
     {
       console.log(token);
