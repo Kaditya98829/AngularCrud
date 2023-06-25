@@ -18,7 +18,7 @@ export class AppComponent implements OnInit ,DoCheck{
     }
   ngOnInit(): void {
     const token = document.cookie.includes('token');
-    if(document.cookie.includes('token'))
+    if(!!document.cookie.includes('token'))
     {
       console.log(token);
       this.isUser = true;
@@ -27,7 +27,7 @@ export class AppComponent implements OnInit ,DoCheck{
 
   }
  ngDoCheck(): void {
-  document.cookie.includes('token') ? this.isUser = true : this.isUser = false;
+  !!document.cookie.includes('token') ? this.isUser = true : this.isUser = false;
  }
 
  logout() {
